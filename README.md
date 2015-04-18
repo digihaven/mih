@@ -12,12 +12,19 @@ experiments described in the paper. For best results, consider using
 
 ### Compilation
 
-You need make, cmake, hdf5 library, hdf5-dev package to build this
-project. To compile, create a folder called `build`, and run:
+You need the dependencies: make, cmake, hdf5 library and hdf5-dev package to build this
+project. 
 
+On Ubuntu 14.04:
 ```
+sudo apt-get install build-essential cmake libhdf5-dev
+```
+
+To compile in the root of the MIH directory, run:
+```
+mkdir -p build
+rm build/* -rf
 cd build
-rm * -rf
 cmake ..
 make
 ```
